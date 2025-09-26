@@ -38,18 +38,25 @@ Es el archivo de configuración donde se guardan las tareas (jobs) que cron debe
 # ejemplo de cron y crontab
 # Visualizar el entorno de red del pc, explorando la IP, vecinos cercanos, exploración de puertos y visión de una posible auditoría de red.
 
-Comandos imprescindibles (rápido)
+Comandos imprescindibles 
 
-IP y interfaces: ip addr show — o hostname -I
-
-Puerta de enlace/ruta: ip route show
-
-Vecinos/ARP: ip neigh show — o arp -a
-
-Hosts activos (ping-scan): nmap -sn 192.168.1.0/24
-
+IP y interfaces:```bash
+ ip addr show — o hostname -I
+```
+Puerta de enlace/ruta:```bash
+ip route show
+```
+Vecinos/ARP:  ```bash
+ip neigh show — o arp -a
+```
+Hosts activos (ping-scan): ```bash
+nmap -sn 192.168.1.0/24
+```
 Puertos locales que escuchan: ss -tuln — o sudo lsof -i -P -n
-
-Escaneo de puertos (tu host autorizado): nmap --top-ports 100 192.168.1.37
-
-Captura de paquetes: sudo tcpdump -i eth0 -w captura.pcap (abrir luego con Wireshark)
+```
+Escaneo de puertos (tu host autorizado):```bash
+ nmap --top-ports 100 192.168.1.37
+```
+Captura de paquetes: ```bash
+sudo tcpdump -i eth0 -w captura.pcap (abrir luego con Wireshark)
+```
