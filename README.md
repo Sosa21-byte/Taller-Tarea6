@@ -40,24 +40,25 @@ Es el archivo de configuración donde se guardan las tareas (jobs) que cron debe
 
 Comandos imprescindibles 
 
-IP y interfaces:```bash
+```bash IP y interfaces:
  ip addr show — o hostname -I
 ```
-Puerta de enlace/ruta:```bash
+```bash Puerta de enlace/ruta:
 ip route show
 ```
-Vecinos/ARP:  ```bash
+```bash Vecinos/ARP:  
 ip neigh show — o arp -a
 ```
-Hosts activos (ping-scan): ```bash
+```bash Hosts activos (ping-scan): 
 nmap -sn 192.168.1.0/24
 ```
-Puertos locales que escuchan:```bash
+```bash Puertos locales que escuchan:
  ss -tuln — o sudo lsof -i -P -n
 ```
-Escaneo de puertos :```bash
+```bash Escaneo de puertos :
  nmap --top-ports 100 192.168.1.37
 ```
-Captura de paquetes: ```bash
+
+```bash Captura de paquetes: 
 sudo tcpdump -i eth0 -w captura.pcap 
 ```
