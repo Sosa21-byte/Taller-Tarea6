@@ -23,7 +23,7 @@ Crear un dashboard básico con un gráfico .
  # espacio pantallazos de la instalacion 
 
 
- 📌 ¿Qué es cron?
+ # 🤖 ¿Qué es cron?
   
 
 Es un servicio de Linux que ejecuta procesos de forma automática en horarios o intervalos definidos.
@@ -31,7 +31,7 @@ Es un servicio de Linux que ejecuta procesos de forma automática en horarios o 
 Funciona en segundo plano y revisa constantemente si hay tareas programadas para ejecutarlas.
 
 
-📌 ¿Qué es crontab?
+# 👾 ¿Qué es crontab?
 
 Es el archivo de configuración donde se guardan las tareas (jobs) que cron debe ejecutar.
 
