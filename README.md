@@ -52,11 +52,12 @@ ip neigh show — o arp -a
 Hosts activos (ping-scan): ```bash
 nmap -sn 192.168.1.0/24
 ```
-Puertos locales que escuchan: ss -tuln — o sudo lsof -i -P -n
+Puertos locales que escuchan:```bash
+ ss -tuln — o sudo lsof -i -P -n
 ```
-Escaneo de puertos (tu host autorizado):```bash
+Escaneo de puertos :```bash
  nmap --top-ports 100 192.168.1.37
 ```
 Captura de paquetes: ```bash
-sudo tcpdump -i eth0 -w captura.pcap (abrir luego con Wireshark)
+sudo tcpdump -i eth0 -w captura.pcap 
 ```
