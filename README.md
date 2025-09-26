@@ -25,7 +25,7 @@ Crear un dashboard básico con un gráfico .
 
  # 🤖 ¿Qué es cron?
 
-    https://www.solvetic.com/uploads/monthly_10_2015/tutorials-8623-0-24382200-1446254575.png
+    ![alt text](https://www.solvetic.com/uploads/monthly_10_2015/tutorials-8623-0-24382200-1446254575.png)                                                                                                              
 
 Es un servicio de Linux que ejecuta procesos de forma automática en horarios o intervalos definidos.
 
