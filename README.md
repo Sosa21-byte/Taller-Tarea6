@@ -1,6 +1,6 @@
 # Taller-Tarea6
 ## 🍓 Primer acercamiento a la raspberry pi 3 
-
+ 
 🧷Instalación y manejo de Raspbian            
 Descargar Raspberry Pi OS (Raspbian).
 
