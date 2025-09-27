@@ -36,6 +36,62 @@ Funciona en segundo plano y revisa constantemente si hay tareas programadas para
 Es el archivo de configuración donde se guardan las tareas (jobs) que cron debe ejecutar.
 
 # ejemplo de cron y crontab
+
+# Seccion de los ejemplos =
+
+🔹 Ejemplo 1: Usando Cron
+
+⏰ Idea: ejecutar un script cada minuto que guarde la hora en un archivo (como un mini-log de reloj).
+```bash
+Crear script hora.sh:
+
+#!/bin/bash
+date >> /home/pi/hora.log
+
+
+Abrir Cron con:
+
+crontab -e
+
+
+Agregar al final:
+
+* * * * * /home/pi/hora.sh
+
+```
+
+🧠 Explicacion de lo que se hace :
+
+* * * * * = cada minuto
+
+Ejecuta el script → escribe la hora en hora.log.
+
+Sirve para llevar registro automático de eventos sin que uno esté pendiente.
+
+
+🔹 Ejemplo 2: Usando crontab para un comando directo
+
+👉 Idea: apagar el PC todos los días a las 11:00 p.m.
+
+```bash
+Editar cron:
+
+crontab -e
+
+
+Agregar:
+
+0 23 * * * /sbin/shutdown now
+```
+
+🧠 Explicacion de lo que se hace :
+
+0 23 * * * = a las 23:00 todos los días.
+
+Ejecuta shutdown now.
+
+Sirve para automatizar rutinas diarias (apagar, respaldar, limpiar, etc.).
+
 # Visualizar el entorno de red del pc, explorando la IP, vecinos cercanos, exploración de puertos y visión de una posible auditoría de red.
 
 Comandos imprescindibles 
