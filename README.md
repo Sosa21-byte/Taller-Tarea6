@@ -35,7 +35,6 @@ Funciona en segundo plano y revisa constantemente si hay tareas programadas para
 
 Es el archivo de configuración donde se guardan las tareas (jobs) que cron debe ejecutar.
 
-# ejemplo de cron y crontab
 
 # Seccion de los ejemplos =
 
@@ -62,7 +61,7 @@ Agregar al final:
 
 🧠 Explicacion de lo que se hace :
 
-* * * * * = cada minuto
+[* * * * *] = cada minuto
 
 Ejecuta el script → escribe la hora en hora.log.
 
@@ -71,7 +70,7 @@ Sirve para llevar registro automático de eventos sin que uno esté pendiente.
 
 🔹 Ejemplo 2: Usando crontab para un comando directo
 
-👉 Idea: apagar el PC todos los días a las 11:00 p.m.
+📴 Idea: apagar el PC todos los días a las 11:00 p.m.
 
 ```bash
 Editar cron:
@@ -91,6 +90,22 @@ Agregar:
 Ejecuta shutdown now.
 
 Sirve para automatizar rutinas diarias (apagar, respaldar, limpiar, etc.).
+
+# 📊 Diferencias cron y crontab
+
+| Aspecto | Ejemplo 1 (Script con cron)              | Ejemplo 2 (Comando directo en crontab)       |
+| ------- | ---------------------------------------- | -------------------------------------------- |
+| Forma   | Llama un **script** externo              | Ejecuta un **comando directo**               |
+| Uso     | Cuando la tarea es más larga o compleja  | Cuando la tarea es corta y simple            |
+| Ejemplo | Guardar logs, hacer respaldos, monitoreo | Apagar PC, enviar alerta, limpiar temporales |
+| Ventaja | Reutilizas el script en otros lugares    | Más rápido y directo, sin archivos extra     |
+
+
+💬 En conclusión:
+
+cron = el sistema que ejecuta cosas en segundo plano.
+
+crontab = la agenda donde apuntas qué ejecutar (sea un script o un comando directo).
 
 # Visualizar el entorno de red del pc, explorando la IP, vecinos cercanos, exploración de puertos y visión de una posible auditoría de red.
 
